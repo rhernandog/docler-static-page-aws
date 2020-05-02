@@ -8,3 +8,12 @@ before_install:
 
 script:
   - npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
+  region: "sa-east-1"
+  app: "my-static-page"
+  env: "MyStaticPage-env"
+  bucket_name: "elasticbeanstalk-sa-east-1-867242831151"
