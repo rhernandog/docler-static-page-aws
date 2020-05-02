@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t my-static-page
+  - docker build -t my-static-page .
 
 script:
   - npm run test
