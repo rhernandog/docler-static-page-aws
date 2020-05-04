@@ -14,8 +14,8 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
   region: "sa-east-1"
-  app: "Another test"
-  env: "AnotherTest-env"
+  app: "docker-react-sample-one"
+  env: "DockerReactSampleOne-env"
   bucket_name: "elasticbeanstalk-sa-east-1-867242831151"
   bucket_path: "another-test"
   on: 
